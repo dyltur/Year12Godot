@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b1m88rqi41nqr"
+path="res://.godot/imported/lizardbomb-1.obj-7f5fdce4da83a40416fb32bcc4c99561.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lizardbomb-1.obj-7f5fdce4da83a40416fb32bcc4c99561.mesh"]
+
+source_file="res://chess folder/Lizardbombpackage/obj/lizardbomb-1.obj"
+dest_files=["res://.godot/imported/lizardbomb-1.obj-7f5fdce4da83a40416fb32bcc4c99561.mesh", "res://.godot/imported/lizardbomb-1.obj-7f5fdce4da83a40416fb32bcc4c99561.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
