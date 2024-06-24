@@ -3812,11 +3812,11 @@ face_vertex_data = {
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Block_16" type="Node3D" parent="."]
+[node name="tree" type="Node3D" parent="."]
 script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_rwsge")
 
-[node name="Block_28" type="Node3D" parent="."]
+[node name="floor" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.134027, 0, 0.105904)
 script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_3trpr")
@@ -3966,3 +3966,9 @@ mesh = SubResource("CapsuleMesh_yj3a2")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.9033, 0)
 shape = SubResource("CapsuleShape3D_lgjwh")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.2855, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Camera3D"]
+transform = Transform3D(-0.148373, -0.0293651, 0.988495, 0.741998, -0.664109, 0.0916448, 0.653778, 0.747059, 0.120324, 0, 30.2149, 0)
