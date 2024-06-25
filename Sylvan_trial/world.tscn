@@ -3972,3 +3972,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.2855, 0)
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Camera3D"]
 transform = Transform3D(-0.148373, -0.0293651, 0.988495, 0.741998, -0.664109, 0.0916448, 0.653778, 0.747059, 0.120324, 0, 30.2149, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.692231, 0.721676, 0, -0.721676, 0.692231, 0, 47.941, 22.3343)
