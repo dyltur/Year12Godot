@@ -10,7 +10,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var jump_speed = 5
 func _physics_process(delta):
 	velocity.y += -gravity * delta
-	var input_dir = Input.get_vector("left","right","up","down")
+	var input_dir = Input.get_vector("ui_left","ui_right","ui_up","ui_down")
 	var move_dir = transform.basis * Vector3(input_dir.x, 0, input_dir.y).normalized()
 	if input_dir:
 		velocity.x = move_dir.x * speed
