@@ -3975,7 +3975,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.2855, 0)
 transform = Transform3D(-0.148373, -0.0293651, 0.988495, 0.741998, -0.664109, 0.0916448, 0.653778, 0.747059, 0.120324, 0, 30.2149, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.692231, 0.721676, 0, -0.721676, 0.692231, 0, 47.941, 22.3343)
+transform = Transform3D(1, 0, 0, 0, 0.692231, 0.721676, 0, -0.721676, 0.692231, 13.2234, 47.941, 36.8635)
 
 [node name="Furniture_Table_1" parent="." instance=ExtResource("7_6hu2p")]
 transform = Transform3D(0.386824, 0, -0.922154, 0, 1, 0, 0.922154, 0, 0.386824, -15.9366, 2.59612, 9.10904)
