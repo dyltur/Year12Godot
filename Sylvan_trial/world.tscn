@@ -1,12 +1,11 @@
-[gd_scene load_steps=387 format=3 uid="uid://boiihd4ryqfo6"]
+[gd_scene load_steps=384 format=3 uid="uid://boiihd4ryqfo6"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_an0hd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_byte.gd" id="2_mhlta"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_int.gd" id="3_gbg46"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_float.gd" id="4_mba3b"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/mesh_vector_data.gd" id="5_m6tvv"]
-[ext_resource type="Script" path="res://main.gd" id="6_2gt54"]
-[ext_resource type="PackedScene" uid="uid://c7y03mktffgus" path="res://furniture/furniture_table_1.tscn" id="7_6hu2p"]
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="6_7888r"]
 
 [sub_resource type="Resource" id="Resource_oredy"]
 script = ExtResource("2_mhlta")
@@ -3807,10 +3806,6 @@ face_vertex_data = {
 "vertex_index": SubResource("Resource_q5naw")
 }
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_yj3a2"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lgjwh"]
-
 [node name="Node3D" type="Node3D"]
 
 [node name="tree" type="Node3D" parent="."]
@@ -3947,6 +3942,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.803969, 28, -0.716898)
 script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_6tv0g")
 
+[node name="Character" parent="." instance=ExtResource("6_7888r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.803969, 28, -0.716898)
+
 [node name="Block_26" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.803969, 28, -0.716898)
 script = ExtResource("1_an0hd")
@@ -3957,25 +3955,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.803969, 28, -0.716898)
 script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_581jd")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-script = ExtResource("6_2gt54")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.8966, 0)
-mesh = SubResource("CapsuleMesh_yj3a2")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.9033, 0)
-shape = SubResource("CapsuleShape3D_lgjwh")
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.2855, 0)
-
-[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Camera3D"]
-transform = Transform3D(-0.148373, -0.0293651, 0.988495, 0.741998, -0.664109, 0.0916448, 0.653778, 0.747059, 0.120324, 0, 30.2149, 0)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.692231, 0.721676, 0, -0.721676, 0.692231, 13.2234, 47.941, 36.8635)
-
-[node name="Furniture_Table_1" parent="." instance=ExtResource("7_6hu2p")]
-transform = Transform3D(0.386824, 0, -0.922154, 0, 1, 0, 0.922154, 0, 0.386824, -15.9366, 2.59612, 9.10904)
