@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ema4fakennlh"
+path="res://.godot/imported/Snakewizard.obj-57b8e5581f74f8b99e757f47dc3f5636.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Snakewizard.obj-57b8e5581f74f8b99e757f47dc3f5636.mesh"]
+
+source_file="res://puzzle assets/chess folder/chess pieces/snake wizard/package/Snakewizard.obj"
+dest_files=["res://.godot/imported/Snakewizard.obj-57b8e5581f74f8b99e757f47dc3f5636.mesh", "res://.godot/imported/Snakewizard.obj-57b8e5581f74f8b99e757f47dc3f5636.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

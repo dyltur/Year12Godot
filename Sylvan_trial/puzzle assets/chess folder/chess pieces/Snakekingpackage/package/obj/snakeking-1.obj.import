@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://gg0glqa61nqo"
+path="res://.godot/imported/snakeking-1.obj-d7654fa7c4054f257acd384ed0d88f6d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/snakeking-1.obj-d7654fa7c4054f257acd384ed0d88f6d.mesh"]
+
+source_file="res://puzzle assets/chess folder/chess pieces/Snakekingpackage/package/obj/snakeking-1.obj"
+dest_files=["res://.godot/imported/snakeking-1.obj-d7654fa7c4054f257acd384ed0d88f6d.mesh", "res://.godot/imported/snakeking-1.obj-d7654fa7c4054f257acd384ed0d88f6d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
