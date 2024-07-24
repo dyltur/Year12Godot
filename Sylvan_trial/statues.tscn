@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3nv8bww5708l"]
+
+[ext_resource type="PackedScene" uid="uid://cj4630ffy16fv" path="res://puzzle assets/statues/knight.tscn" id="3_hvhkc"]
+[ext_resource type="PackedScene" uid="uid://chf4vojmdwo5b" path="res://puzzle assets/statues/barb.tscn" id="4_4krh1"]
+[ext_resource type="PackedScene" uid="uid://bena30dxrp68q" path="res://puzzle assets/statues/mage.tscn" id="4_13dde"]
+[ext_resource type="PackedScene" uid="uid://bga1b4h3w604h" path="res://puzzle assets/statues/rogue.tscn" id="4_kycl1"]
+
+[node name="statues" type="Node3D"]
+
+[node name="knight" parent="." instance=ExtResource("3_hvhkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.94607, 0, 1.43809)
+
+[node name="mage" parent="." instance=ExtResource("4_13dde")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.983286, 0, 1.50569)
+
+[node name="barb" parent="." instance=ExtResource("4_4krh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.805875, 0, -0.845816)
+
+[node name="rogue" parent="." instance=ExtResource("4_kycl1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25538, 0, -1.05084)
