@@ -57,6 +57,10 @@ extends CharacterBody3D
 @export var pausing_enabled : bool = true
 @export var gravity_enabled : bool = true
 
+var pages_collected = 0
+@onready var ray = $Head/Camera/RayCast3D	
+@onready var interaction_notifier = $Control/interactionnotifier
+@onready var collection_tracker = $Control/MarginContainer/collectiontracker
 
 # Member variables
 var speed : float = base_speed
@@ -129,6 +133,7 @@ func change_reticle(reticle): # Yup, this function is kinda strange
 
 
 func _physics_process(delta):
+	check_ray_hit()
 	# Big thanks to github.com/LorenzoAncora for the concept of the improved debug values
 	current_speed = Vector3.ZERO.distance_to(get_real_velocity())
 	$UserInterface/DebugPanel.add_property("Speed", snappedf(current_speed, 0.001), 1)
@@ -343,3 +348,15 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		HEAD.rotation_degrees.y -= event.relative.x * mouse_sensitivity
 		HEAD.rotation_degrees.x -= event.relative.y * mouse_sensitivity
+
+
+func check_ray_hit():
+	if ray.is_colliding():
+		if ray.get_collider().is_in_group("Pickup"):
+			interaction_notifier.visible = true
+		if Input.is_action_just_pressed("use"):
+			ray.get_collider().queue_free()
+			pages_collected +=1
+			collection_tracker.text = "pages : " + str(pages_collected) + "/10"
+	else:
+		interaction_notifier.visible = false

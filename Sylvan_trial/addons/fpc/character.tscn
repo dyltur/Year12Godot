@@ -417,12 +417,14 @@ transform = Transform3D(1, 0, 0, 0, 0.999391, -0.0348995, 0, 0.0348995, 0.999391
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera"]
 target_position = Vector3(0, 0, -1.5)
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="HeadbobAnimation" type="AnimationPlayer" parent="Head"]
 libraries = {
 "": SubResource("AnimationLibrary_o0unb")
 }
-blend_times = [&"walk", &"RESET", 0.5, &"RESET", &"walk", 0.5, &"RESET", &"RESET", 0.5]
+blend_times = [&"RESET", &"RESET", 0.5, &"RESET", &"walk", 0.5, &"walk", &"RESET", 0.5]
 
 [node name="JumpAnimation" type="AnimationPlayer" parent="Head"]
 libraries = {
@@ -462,3 +464,38 @@ target_position = Vector3(0, 0.5, 0)
 
 [node name="EditorModule" type="Node" parent="."]
 script = ExtResource("3_v3ckk")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="interactionnotifier" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "press E to collect"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 110.0
+offset_bottom = 40.0
+
+[node name="collectiontracker" type="Label" parent="Control/MarginContainer"]
+layout_mode = 2
+text = "Pages 0/10"
