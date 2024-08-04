@@ -1,4 +1,4 @@
-[gd_scene load_steps=385 format=3 uid="uid://boiihd4ryqfo6"]
+[gd_scene load_steps=388 format=3 uid="uid://boiihd4ryqfo6"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_an0hd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_byte.gd" id="2_mhlta"]
@@ -7,6 +7,9 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/mesh_vector_data.gd" id="5_m6tvv"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="6_7888r"]
 [ext_resource type="PackedScene" uid="uid://dppdfdawwluoa" path="res://pickup.tscn" id="7_eeecm"]
+[ext_resource type="PackedScene" uid="uid://c7y03mktffgus" path="res://puzzle assets/furniture/table/furniture_table_1.tscn" id="8_mbqsx"]
+[ext_resource type="PackedScene" uid="uid://cw6wqtf2ibqhf" path="res://puzzle assets/chess folder/chess board.glb" id="9_1fgt4"]
+[ext_resource type="ArrayMesh" uid="uid://c504qy3mkro1o" path="res://puzzle assets/chess folder/chess pieces/Crocsoldier/Crocsoldier.obj" id="10_1gnhw"]
 
 [sub_resource type="Resource" id="Resource_oredy"]
 script = ExtResource("2_mhlta")
@@ -3964,3 +3967,27 @@ transform = Transform3D(1, 0, 0, 0, 0.692231, 0.721676, 0, -0.721676, 0.692231, 
 
 [node name="pickup" parent="." instance=ExtResource("7_eeecm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.78668, 3.29982, 2.44897)
+
+[node name="Furniture_Table_1" parent="." instance=ExtResource("8_mbqsx")]
+transform = Transform3D(0.985976, 0, 0.166889, 0, 1, 0, -0.166889, 0, 0.985976, 4.06272, 2.56018, 17.9598)
+
+[node name="chess board" parent="." instance=ExtResource("9_1fgt4")]
+transform = Transform3D(0.493185, 0, 0.0822742, 0, 0.5, 0, -0.0822742, 0, 0.493185, 4.13665, 2.74282, 17.9477)
+
+[node name="crocsoldier" type="Node3D" parent="chess board"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.864358, 0)
+
+[node name="Crocsoldier3" type="MeshInstance3D" parent="chess board/crocsoldier"]
+transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, 4.492, -4.921, 5.215)
+mesh = ExtResource("10_1gnhw")
+skeleton = NodePath("../..")
+
+[node name="Crocsoldier2" type="MeshInstance3D" parent="chess board/crocsoldier"]
+transform = Transform3D(0.499447, 0, 0.0235182, 0, 0.5, 0, -0.0235182, 0, 0.499447, 5.492, -4.921, 5.215)
+mesh = ExtResource("10_1gnhw")
+skeleton = NodePath("../..")
+
+[node name="Crocsoldier" type="MeshInstance3D" parent="chess board/crocsoldier"]
+transform = Transform3D(0.499861, 0, 0.0117624, 0, 0.499999, 0, -0.0117624, 0, 0.499861, 8.4291, -4.9212, 5.21527)
+mesh = ExtResource("10_1gnhw")
+skeleton = NodePath("../../..")
