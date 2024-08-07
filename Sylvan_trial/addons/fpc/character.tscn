@@ -498,4 +498,4 @@ offset_bottom = 40.0
 
 [node name="collectiontracker" type="Label" parent="Control/MarginContainer"]
 layout_mode = 2
-text = "Pages 0/10"
+text = "puzzles solved 0/10"

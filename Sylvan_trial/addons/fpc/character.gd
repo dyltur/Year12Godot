@@ -57,7 +57,7 @@ extends CharacterBody3D
 @export var pausing_enabled : bool = true
 @export var gravity_enabled : bool = true
 
-var pages_collected = 0
+var puzzles_solved = 0
 @onready var ray = $Head/Camera/RayCast3D	
 @onready var interaction_notifier = $Control/interactionnotifier
 @onready var collection_tracker = $Control/MarginContainer/collectiontracker
@@ -356,7 +356,7 @@ func check_ray_hit():
 			interaction_notifier.visible = true
 		if Input.is_action_just_pressed("use"):
 			ray.get_collider().queue_free()
-			pages_collected +=1
-			collection_tracker.text = "pages : " + str(pages_collected) + "/10"
+			puzzles_solved +=1
+			collection_tracker.text = "pages : " + str(puzzles_solved) + "/10"
 	else:
 		interaction_notifier.visible = false
