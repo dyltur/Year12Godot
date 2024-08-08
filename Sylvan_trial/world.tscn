@@ -3817,6 +3817,8 @@ face_vertex_data = {
 
 [node name="world" type="Node3D"]
 
+[node name="Timer" type="Timer" parent="."]
+
 [node name="cyclops" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.134027, 0, 0.105904)
 
