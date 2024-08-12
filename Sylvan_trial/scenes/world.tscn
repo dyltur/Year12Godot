@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_float.gd" id="4_mba3b"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/mesh_vector_data.gd" id="5_m6tvv"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="6_7888r"]
-[ext_resource type="PackedScene" uid="uid://dppdfdawwluoa" path="res://pickup.tscn" id="7_eeecm"]
+[ext_resource type="PackedScene" uid="uid://dppdfdawwluoa" path="res://scenes/pickup.tscn" id="7_eeecm"]
 [ext_resource type="PackedScene" uid="uid://c7y03mktffgus" path="res://puzzle assets/furniture/table/furniture_table_1.tscn" id="8_mbqsx"]
 [ext_resource type="PackedScene" uid="uid://cw6wqtf2ibqhf" path="res://puzzle assets/chess folder/chess board.glb" id="9_1fgt4"]
 [ext_resource type="ArrayMesh" uid="uid://c504qy3mkro1o" path="res://puzzle assets/chess folder/chess pieces/Crocsoldier/Crocsoldier.obj" id="10_1gnhw"]

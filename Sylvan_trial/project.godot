@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Sylvan_trial"
-run/main_scene="res://world.tscn"
+run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
-Global="*res://Global.gd"
+Global="*res://gd/Global.gd"
 
 [editor_plugins]
 
