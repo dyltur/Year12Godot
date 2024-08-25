@@ -1,0 +1,128 @@
+[gd_scene load_steps=9 format=3 uid="uid://h65cvgpwo0bo"]
+
+[ext_resource type="Texture2D" uid="uid://dt7742a2niwb1" path="res://puzzle assets/chess folder/book/book_middle.png" id="1_072lx"]
+[ext_resource type="Texture2D" uid="uid://7wj27ivlwsu2" path="res://puzzle assets/chess folder/png/chess-bishop-black.png" id="2_2ee4o"]
+[ext_resource type="Texture2D" uid="uid://ckcg0y2c8xsmq" path="res://puzzle assets/chess folder/png/chess-knight-black.png" id="3_d8dbj"]
+[ext_resource type="Texture2D" uid="uid://beh87shs81p3c" path="res://puzzle assets/chess folder/png/chess-pawn-black.png" id="4_oantq"]
+[ext_resource type="Texture2D" uid="uid://b6npen4r8pna1" path="res://puzzle assets/Arrows/arrows/DOWN.png" id="5_2its4"]
+[ext_resource type="Texture2D" uid="uid://duxohol87i46p" path="res://puzzle assets/Arrows/arrows/BOTTOM RIGHT.png" id="6_cxw6c"]
+[ext_resource type="Texture2D" uid="uid://drpxy015b8ywq" path="res://puzzle assets/Arrows/arrows/UP.png" id="7_vwo14"]
+[ext_resource type="Texture2D" uid="uid://dwcgojrce1im1" path="res://puzzle assets/Arrows/arrows/TOP LEFT.png" id="8_rmjia"]
+
+[node name="book" type="Node3D"]
+
+[node name="BookMiddle" type="Sprite2D" parent="."]
+position = Vector2(567, 329)
+scale = Vector2(2.7, 2.7)
+texture = ExtResource("1_072lx")
+
+[node name="top" type="TextEdit" parent="."]
+offset_left = 220.0
+offset_top = 32.0
+offset_right = 541.0
+offset_bottom = 573.0
+rotation = -0.0100778
+
+[node name="Chess-pawn-black" type="Sprite2D" parent="top"]
+position = Vector2(43.7425, 323.457)
+rotation = 0.0100778
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_oantq")
+
+[node name="Chess-knight-black" type="Sprite2D" parent="top"]
+position = Vector2(49.0401, 95.4991)
+rotation = 0.0100778
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_d8dbj")
+
+[node name="Down" type="Sprite2D" parent="top"]
+position = Vector2(119.926, 107.214)
+rotation = 0.0100778
+texture = ExtResource("5_2its4")
+
+[node name="Down2" type="Sprite2D" parent="top"]
+position = Vector2(150.924, 107.526)
+rotation = 0.0100778
+texture = ExtResource("5_2its4")
+
+[node name="Down3" type="Sprite2D" parent="top"]
+position = Vector2(182.902, 109.849)
+rotation = 0.0100778
+texture = ExtResource("5_2its4")
+
+[node name="BottomRight" type="Sprite2D" parent="top"]
+position = Vector2(222.9, 110.252)
+rotation = -0.77532
+texture = ExtResource("6_cxw6c")
+
+[node name="Down4" type="Sprite2D" parent="top"]
+position = Vector2(93.6795, 329.961)
+rotation = 0.0100778
+texture = ExtResource("5_2its4")
+
+[node name="Down5" type="Sprite2D" parent="top"]
+position = Vector2(126.668, 331.293)
+rotation = 0.0100778
+texture = ExtResource("5_2its4")
+
+[node name="bottom" type="TextEdit" parent="."]
+offset_left = 586.0
+offset_top = 29.0
+offset_right = 907.0
+offset_bottom = 570.0
+text = "
+
+"
+
+[node name="TopLeft4" type="Sprite2D" parent="bottom"]
+position = Vector2(166, 506)
+texture = ExtResource("8_rmjia")
+
+[node name="Chess-bishop-black" type="Sprite2D" parent="bottom"]
+position = Vector2(39, 499)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_2ee4o")
+
+[node name="Chess-knight-black2" type="Sprite2D" parent="bottom"]
+position = Vector2(47, 102)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_d8dbj")
+
+[node name="Chess-pawn-black2" type="Sprite2D" parent="bottom"]
+position = Vector2(33, 336)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_oantq")
+
+[node name="Up" type="Sprite2D" parent="bottom"]
+position = Vector2(98, 102)
+texture = ExtResource("7_vwo14")
+
+[node name="Up5" type="Sprite2D" parent="bottom"]
+position = Vector2(104, 336)
+texture = ExtResource("7_vwo14")
+
+[node name="Up4" type="Sprite2D" parent="bottom"]
+position = Vector2(75, 337)
+texture = ExtResource("7_vwo14")
+
+[node name="TopLeft3" type="Sprite2D" parent="bottom"]
+position = Vector2(126, 508)
+texture = ExtResource("8_rmjia")
+
+[node name="TopLeft2" type="Sprite2D" parent="bottom"]
+position = Vector2(87, 510)
+texture = ExtResource("8_rmjia")
+
+[node name="TopLeft" type="Sprite2D" parent="bottom"]
+position = Vector2(189, 102)
+rotation = -0.785398
+scale = Vector2(1, 1)
+texture = ExtResource("8_rmjia")
+
+[node name="Up3" type="Sprite2D" parent="bottom"]
+position = Vector2(152, 103)
+texture = ExtResource("7_vwo14")
+
+[node name="Up2" type="Sprite2D" parent="bottom"]
+position = Vector2(125, 102)
+texture = ExtResource("7_vwo14")

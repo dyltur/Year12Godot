@@ -14246,13 +14246,13 @@ mesh = ExtResource("14_66s6j")
 skeleton = NodePath("../../../..")
 
 [node name="mage" parent="." instance=ExtResource("16_vdg2a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4535, 2, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58851, 2, -3)
 
 [node name="barb" parent="." instance=ExtResource("17_6icbu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.38109, 2, 3)
 
 [node name="knight" parent="." instance=ExtResource("18_r4uo7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12167, 2, 2.63031)
 
 [node name="rogue" parent="." instance=ExtResource("19_jpnf5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05162, 2, -3)
