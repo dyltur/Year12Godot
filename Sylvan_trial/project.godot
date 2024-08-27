@@ -26,6 +26,7 @@ enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
 
 [filesystem]
 
+import/blender/enabled=false
 import/fbx/enabled=false
 
 [input]

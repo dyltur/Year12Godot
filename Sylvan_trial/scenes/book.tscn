@@ -116,7 +116,6 @@ texture = ExtResource("8_rmjia")
 [node name="TopLeft" type="Sprite2D" parent="bottom"]
 position = Vector2(189, 102)
 rotation = -0.785398
-scale = Vector2(1, 1)
 texture = ExtResource("8_rmjia")
 
 [node name="Up3" type="Sprite2D" parent="bottom"]

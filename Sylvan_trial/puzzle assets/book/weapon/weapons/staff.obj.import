@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://de10df61qvyh2"
+path="res://.godot/imported/staff.obj-1f9afc4c8ba0a7817c6fe6c6805dafd8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/staff.obj-1f9afc4c8ba0a7817c6fe6c6805dafd8.mesh"]
+
+source_file="res://puzzle assets/book/weapon/weapons/staff.obj"
+dest_files=["res://.godot/imported/staff.obj-1f9afc4c8ba0a7817c6fe6c6805dafd8.mesh", "res://.godot/imported/staff.obj-1f9afc4c8ba0a7817c6fe6c6805dafd8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
