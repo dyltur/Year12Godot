@@ -1,4 +1,4 @@
-[gd_scene load_steps=1365 format=4 uid="uid://boiihd4ryqfo6"]
+[gd_scene load_steps=1366 format=4 uid="uid://boiihd4ryqfo6"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_an0hd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_byte.gd" id="2_mhlta"]
@@ -19,7 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://chf4vojmdwo5b" path="res://puzzle assets/statues/barb.tscn" id="17_6icbu"]
 [ext_resource type="PackedScene" uid="uid://cj4630ffy16fv" path="res://puzzle assets/statues/knight.tscn" id="18_r4uo7"]
 [ext_resource type="PackedScene" uid="uid://bga1b4h3w604h" path="res://puzzle assets/statues/rogue.tscn" id="19_jpnf5"]
-[ext_resource type="PackedScene" uid="uid://c8eao7tqgwcig" path="res://puzzle assets/book/weapon/weapons/book.fbx" id="20_5ot36"]
+[ext_resource type="PackedScene" uid="uid://drf25w0684n5x" path="res://puzzle assets/book/Book_2/Book_2.fbx" id="20_va3co"]
+[ext_resource type="PackedScene" uid="uid://lrj7blo8epsc" path="res://puzzle assets/furniture/table/furniture_table_5.tscn" id="21_n3alq"]
 
 [sub_resource type="Resource" id="Resource_oredy"]
 script = ExtResource("2_mhlta")
@@ -14248,7 +14249,7 @@ mesh = ExtResource("14_66s6j")
 skeleton = NodePath("../../../..")
 
 [node name="Snakeking-3" type="MeshInstance3D" parent="chess board/black side/other"]
-transform = Transform3D(-0.624935, 0, 0.00894453, 0, 0.625, 0, -0.00894453, 0, -0.624935, -5.64606, 0.449509, 0.15625)
+transform = Transform3D(-0.624935, 0, 0.00894454, 0, 0.625, 0, -0.00894454, 0, -0.624935, -8.35373, 0.449509, 0.199097)
 mesh = ExtResource("12_de53w")
 skeleton = NodePath("../../../..")
 
@@ -14267,7 +14268,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.68737, 0, 4.22552)
 shape = SubResource("SeparationRayShape3D_tc084")
 
 [node name="Snakegod-0" type="MeshInstance3D" parent="chess board/black side/other"]
-transform = Transform3D(-0.62497, 0, 0.00604305, 0, 0.625, 0, -0.00604305, 0, -0.62497, -5.53684, 0.575447, -0.0429688)
+transform = Transform3D(-0.62497, 0, 0.00604306, 0, 0.625, 0, -0.00604306, 0, -0.62497, -2.48903, 0.575012, 0.0231628)
 mesh = ExtResource("11_alaho")
 skeleton = NodePath("../../../..")
 
@@ -14288,5 +14289,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12167, 2, 2.63031)
 [node name="rogue" parent="." instance=ExtResource("19_jpnf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05162, 2, -3)
 
-[node name="book" parent="." instance=ExtResource("20_5ot36")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.52868, 2.11041, 3.82157)
+[node name="Book_2" parent="." instance=ExtResource("20_va3co")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 15.2729, 2.92052, 11.2135)
+
+[node name="Furniture_Table_5" parent="." instance=ExtResource("21_n3alq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4924, 2.75071, 11.102)

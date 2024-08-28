@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cw2fdcq7d0amv"
+path="res://.godot/imported/Book_2.obj-ab69b0719fe04eb5dd85b74c76a79a37.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Book_2.obj-ab69b0719fe04eb5dd85b74c76a79a37.mesh"]
+
+source_file="res://puzzle assets/book/Book_2/Book_2.obj"
+dest_files=["res://.godot/imported/Book_2.obj-ab69b0719fe04eb5dd85b74c76a79a37.mesh", "res://.godot/imported/Book_2.obj-ab69b0719fe04eb5dd85b74c76a79a37.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
