@@ -1,4 +1,4 @@
-[gd_scene load_steps=1366 format=4 uid="uid://boiihd4ryqfo6"]
+[gd_scene load_steps=1367 format=4 uid="uid://boiihd4ryqfo6"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_an0hd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_byte.gd" id="2_mhlta"]
@@ -13525,6 +13525,9 @@ face_vertex_data = {
 
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_tc084"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_y7pfy"]
+size = Vector3(2.75452, 1, 2.22607)
+
 [node name="world" type="Node3D"]
 
 [node name="Timer" type="Timer" parent="."]
@@ -14278,7 +14281,7 @@ mesh = ExtResource("14_66s6j")
 skeleton = NodePath("../../../..")
 
 [node name="mage" parent="." instance=ExtResource("16_vdg2a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58851, 2, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58851, 1.79779, -3)
 
 [node name="barb" parent="." instance=ExtResource("17_6icbu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.38109, 2, 3)
@@ -14287,10 +14290,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.38109, 2, 3)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12167, 2, 2.63031)
 
 [node name="rogue" parent="." instance=ExtResource("19_jpnf5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05162, 2, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05162, 1.75055, -3)
 
 [node name="Book_2" parent="." instance=ExtResource("20_va3co")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 15.2729, 2.92052, 11.2135)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -16.708, 2.92052, -8.44407)
+
+[node name="Area3D" type="Area3D" parent="Book_2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Book_2/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.155586, 0, 0.0544472)
+shape = SubResource("BoxShape3D_y7pfy")
 
 [node name="Furniture_Table_5" parent="." instance=ExtResource("21_n3alq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4924, 2.75071, 11.102)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.6804, 2.75071, -8.45522)
