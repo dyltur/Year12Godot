@@ -14073,233 +14073,245 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.803969, 28, -0.716898)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.692231, 0.721676, 0, -0.721676, 0.692231, 13.2234, 47.941, 36.8635)
 
-[node name="pickup" parent="." instance=ExtResource("7_eeecm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3175, 3.29982, 2.44897)
+[node name="puzzles" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58851, 1.79779, -3)
 
-[node name="Furniture_Table_1" parent="." instance=ExtResource("8_mbqsx")]
-transform = Transform3D(0.985976, 0, 0.166889, 0, 1, 0, -0.166889, 0, 0.985976, 4.06272, 2.56018, 17.9598)
+[node name="chess board" parent="puzzles" instance=ExtResource("9_1fgt4")]
+transform = Transform3D(0.493185, 0, 0.0822742, 0, 0.5, 0, -0.0822742, 0, 0.493185, 7.72516, 0.94503, 20.9477)
 
-[node name="chess board" parent="." instance=ExtResource("9_1fgt4")]
-transform = Transform3D(0.493185, 0, 0.0822742, 0, 0.5, 0, -0.0822742, 0, 0.493185, 4.13665, 2.74282, 17.9477)
-
-[node name="white side" type="Node3D" parent="chess board"]
+[node name="white side" type="Node3D" parent="puzzles/chess board"]
 transform = Transform3D(1.97274, 0, -0.329096, 0, 2, 0, 0.329096, 0, 1.97274, -2.254, -5.48564, -36.7674)
 
-[node name="crocsoldier" type="Node3D" parent="chess board/white side"]
+[node name="crocsoldier" type="Node3D" parent="puzzles/chess board/white side"]
 transform = Transform3D(0.0493185, 0, 0.00822742, 0, 0.05, 0, -0.00822742, 0, 0.0493185, 4.13665, 3.175, 17.9477)
 
-[node name="Crocsoldier3" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier3" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, 3.36582, -5.32, 5.37283)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier2" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier2" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499447, 0, 0.0235182, 0, 0.5, 0, -0.0235182, 0, 0.499447, 5.541, -5.32, 4.923)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499861, 0, 0.0117624, 0, 0.499999, 0, -0.0117624, 0, 0.499861, 7.636, -5.32, 5.083)
 mesh = ExtResource("10_1gnhw")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Crocsoldier4" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier4" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, 1.213, -5.32, 5.195)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier5" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier5" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -0.842743, -5.31954, 5.14352)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="chess board/white side/crocsoldier/Crocsoldier5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.40222, -6.67062, -8.8396)
+[node name="Area3D" type="Area3D" parent="puzzles/chess board/white side/crocsoldier/Crocsoldier5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="puzzles/chess board/white side/crocsoldier/Crocsoldier5/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.34641, -1.09428, -8.63873)
 shape = SubResource("SeparationRayShape3D_yqk3k")
 
-[node name="Crocsoldier6" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier6" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -3.249, -5.32, 5.168)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier7" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier7" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -5.634, -5.32, 5.076)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier8" type="MeshInstance3D" parent="chess board/white side/crocsoldier"]
+[node name="Crocsoldier8" type="MeshInstance3D" parent="puzzles/chess board/white side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -7.955, -5.32, 5.241)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="other" type="Node3D" parent="chess board/white side"]
+[node name="other" type="Node3D" parent="puzzles/chess board/white side"]
 transform = Transform3D(-0.0394114, 0, -0.00683727, 0, 0.04, 0, 0.00683727, 0, -0.0394114, 3.92494, 2.8871, 18.3877)
 
-[node name="Lizardmonitor-2" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Lizardmonitor-2" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, 0, -3.05176e-05)
 mesh = ExtResource("11_eswel")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Snakewizard" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Snakewizard" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(1.24982, 0, 0.0214012, 0, 1.25, 0, -0.0214012, 0, 1.24982, -11.3747, 0.629539, -0.11322)
 mesh = ExtResource("10_mpk3q")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Lizardmonitor-0" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Lizardmonitor-0" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(0.499904, 0, -0.00971191, 0, 0.5, 0, 0.00971191, 0, 0.499904, 2.98348, 0.67588, 0.210968)
 mesh = ExtResource("14_66s6j")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Snakeking-3" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Snakeking-3" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(-0.624935, 0, 0.00894453, 0, 0.625, 0, -0.00894453, 0, -0.624935, -5.64606, 0.449509, 0.15625)
 mesh = ExtResource("12_de53w")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Snakewizard2" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Snakewizard2" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(1.24982, 0, 0.0214012, 0, 1.25, 0, -0.0214012, 0, 1.24982, -3.03007, 0.629539, 0.124207)
 mesh = ExtResource("10_mpk3q")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Lizardmonitor-3" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Lizardmonitor-3" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(1, 0, -1.04308e-07, 0, 1, 0, 1.04308e-07, 0, 1, -14.2362, 0, 0.470978)
 mesh = ExtResource("11_eswel")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="chess board/white side/other/Lizardmonitor-3"]
-transform = Transform3D(1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, 1, 2.94562, 0, 4.05472)
+[node name="Area3D" type="Area3D" parent="puzzles/chess board/white side/other/Lizardmonitor-3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="puzzles/chess board/white side/other/Lizardmonitor-3/Area3D"]
+transform = Transform3D(1, 0, 1.04308e-07, 0, 1, 0, -1.04308e-07, 0, 1, 2.94562, 0, 4.05472)
 shape = SubResource("SeparationRayShape3D_26d3j")
 
-[node name="Snakegod-0" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Snakegod-0" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(-0.62497, 0, 0.00604305, 0, 0.625, 0, -0.00604305, 0, -0.62497, -5.53684, 0.575447, -0.0429688)
 mesh = ExtResource("11_alaho")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Lizardmonitor-1" type="MeshInstance3D" parent="chess board/white side/other"]
+[node name="Lizardmonitor-1" type="MeshInstance3D" parent="puzzles/chess board/white side/other"]
 transform = Transform3D(0.499904, 0, -0.00971191, 0, 0.5, 0, 0.00971191, 0, 0.499904, -17.1134, 0.67588, 0.141479)
 mesh = ExtResource("14_66s6j")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="black side" type="Node3D" parent="chess board"]
+[node name="black side" type="Node3D" parent="puzzles/chess board"]
 transform = Transform3D(1.97274, 0, -0.329096, 0, 2, 0, 0.329096, 0, 1.97274, -2.254, -5.48564, -36.7674)
 
-[node name="crocsoldier" type="Node3D" parent="chess board/black side"]
+[node name="crocsoldier" type="Node3D" parent="puzzles/chess board/black side"]
 transform = Transform3D(-0.0493676, 0, -0.00792685, 0, 0.05, 0, 0.00792685, 0, -0.0493676, 4.13435, 3.175, 17.9373)
 
-[node name="Crocsoldier3" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier3" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, 3.422, -5.32, 5.036)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier2" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier2" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499447, 0, 0.0235182, 0, 0.5, 0, -0.0235182, 0, 0.499447, 5.541, -5.32, 4.923)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499861, 0, 0.0117624, 0, 0.499999, 0, -0.0117624, 0, 0.499861, 7.636, -5.32, 5.083)
 mesh = ExtResource("10_1gnhw")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Crocsoldier4" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier4" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, 1.213, -5.32, 5.195)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="chess board/black side/crocsoldier/Crocsoldier4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14595, 0, -9.59918)
+[node name="Area3D" type="Area3D" parent="puzzles/chess board/black side/crocsoldier/Crocsoldier4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="puzzles/chess board/black side/crocsoldier/Crocsoldier4/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.145966, 0, -9.59924)
 shape = SubResource("SeparationRayShape3D_ew08j")
 
-[node name="Crocsoldier5" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier5" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -0.842743, -5.31954, 5.14352)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier6" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier6" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -3.249, -5.32, 5.168)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier7" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier7" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -5.634, -5.32, 5.076)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="Crocsoldier8" type="MeshInstance3D" parent="chess board/black side/crocsoldier"]
+[node name="Crocsoldier8" type="MeshInstance3D" parent="puzzles/chess board/black side/crocsoldier"]
 transform = Transform3D(0.499871, 0, 0.0113437, 0, 0.5, 0, -0.0113437, 0, 0.499871, -7.955, -5.32, 5.241)
 mesh = ExtResource("10_1gnhw")
 skeleton = NodePath("../../..")
 
-[node name="other" type="Node3D" parent="chess board/black side"]
+[node name="other" type="Node3D" parent="puzzles/chess board/black side"]
 transform = Transform3D(0.0395975, 0, 0.00566023, 0, 0.04, 0, -0.00566023, 0, 0.0395975, 4.34665, 2.8871, 17.518)
 
-[node name="Lizardmonitor-2" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Lizardmonitor-2" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0, 0, -3.05176e-05)
 mesh = ExtResource("11_eswel")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Snakewizard" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Snakewizard" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(1.24982, 0, 0.0214012, 0, 1.25, 0, -0.0214012, 0, 1.24982, -11.3747, 0.629539, -0.11322)
 mesh = ExtResource("10_mpk3q")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="chess board/black side/other/Snakewizard"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.03814, 0, 3.51791)
+[node name="Area3D" type="Area3D" parent="puzzles/chess board/black side/other/Snakewizard"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="puzzles/chess board/black side/other/Snakewizard/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.03814, 0, 3.51788)
 shape = SubResource("SeparationRayShape3D_2tudl")
 
-[node name="Lizardmonitor-0" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Lizardmonitor-0" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(0.499904, 0, -0.00971191, 0, 0.5, 0, 0.00971191, 0, 0.499904, 2.98348, 0.67588, 0.210968)
 mesh = ExtResource("14_66s6j")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Snakeking-3" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Snakeking-3" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(-0.624935, 0, 0.00894454, 0, 0.625, 0, -0.00894454, 0, -0.624935, -8.35373, 0.449509, 0.199097)
 mesh = ExtResource("12_de53w")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Snakewizard2" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Snakewizard2" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(1.24982, 0, 0.0214012, 0, 1.25, 0, -0.0214012, 0, 1.24982, -3.03007, 0.629539, 0.124207)
 mesh = ExtResource("10_mpk3q")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Lizardmonitor-3" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Lizardmonitor-3" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(1, 0, -1.04308e-07, 0, 1, 0, 1.04308e-07, 0, 1, -14.2362, 0, 0.470978)
 mesh = ExtResource("11_eswel")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="chess board/black side/other/Lizardmonitor-3"]
+[node name="Area3D" type="Area3D" parent="puzzles/chess board/black side/other/Lizardmonitor-3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="puzzles/chess board/black side/other/Lizardmonitor-3/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.68737, 0, 4.22552)
 shape = SubResource("SeparationRayShape3D_tc084")
 
-[node name="Snakegod-0" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Snakegod-0" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(-0.62497, 0, 0.00604306, 0, 0.625, 0, -0.00604306, 0, -0.62497, -2.48903, 0.575012, 0.0231628)
 mesh = ExtResource("11_alaho")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="Lizardmonitor-1" type="MeshInstance3D" parent="chess board/black side/other"]
+[node name="Lizardmonitor-1" type="MeshInstance3D" parent="puzzles/chess board/black side/other"]
 transform = Transform3D(0.499904, 0, -0.00971191, 0, 0.5, 0, 0.00971191, 0, 0.499904, -17.1134, 0.67588, 0.141479)
 mesh = ExtResource("14_66s6j")
-skeleton = NodePath("../../../..")
+skeleton = NodePath("../../../../..")
 
-[node name="mage" parent="." instance=ExtResource("16_vdg2a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58851, 1.79779, -3)
+[node name="mage" parent="puzzles" instance=ExtResource("16_vdg2a")]
 
-[node name="barb" parent="." instance=ExtResource("17_6icbu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.38109, 2, 3)
+[node name="barb" parent="puzzles" instance=ExtResource("17_6icbu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20742, 0.20221, 6)
 
-[node name="knight" parent="." instance=ExtResource("18_r4uo7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12167, 2, 2.63031)
+[node name="knight" parent="puzzles" instance=ExtResource("18_r4uo7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.71018, 0.20221, 5.63031)
 
-[node name="rogue" parent="." instance=ExtResource("19_jpnf5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05162, 1.75055, -3)
+[node name="Furniture_Table_1" parent="puzzles" instance=ExtResource("8_mbqsx")]
+transform = Transform3D(0.985976, 0, 0.166889, 0, 1, 0, -0.166889, 0, 0.985976, 7.65123, 0.76239, 20.9598)
 
-[node name="Book_2" parent="." instance=ExtResource("20_va3co")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -16.708, 2.92052, -8.44407)
+[node name="rogue" parent="puzzles" instance=ExtResource("19_jpnf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.64013, -0.04724, 0)
 
-[node name="Area3D" type="Area3D" parent="Book_2"]
+[node name="Book_2" parent="puzzles" instance=ExtResource("20_va3co")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -13.1195, 1.12273, -5.44407)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Book_2/Area3D"]
+[node name="Area3D" type="Area3D" parent="puzzles/Book_2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="puzzles/Book_2/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.155586, 0, 0.0544472)
 shape = SubResource("BoxShape3D_y7pfy")
 
-[node name="Furniture_Table_5" parent="." instance=ExtResource("21_n3alq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.6804, 2.75071, -8.45522)
+[node name="Furniture_Table_5" parent="puzzles" instance=ExtResource("21_n3alq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0919, 0.95292, -5.45522)
+
+[node name="pickup" parent="puzzles" instance=ExtResource("7_eeecm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.906, 1.50203, 5.44897)
