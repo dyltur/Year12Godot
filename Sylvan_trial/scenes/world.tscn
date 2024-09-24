@@ -1,4 +1,4 @@
-[gd_scene load_steps=1367 format=4 uid="uid://boiihd4ryqfo6"]
+[gd_scene load_steps=1393 format=4 uid="uid://boiihd4ryqfo6"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_an0hd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_byte.gd" id="2_mhlta"]
@@ -13515,6 +13515,268 @@ face_vertex_data = {
 "vertex_index": SubResource("Resource_1ahb4")
 }
 
+[sub_resource type="Resource" id="Resource_50lpj"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AAAAAAAAAAAAAAAA")
+name = &"selected"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_kftfb"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+name = &"color"
+category = ""
+data_type = 4
+stride = 4
+
+[sub_resource type="Resource" id="Resource_ttpll"]
+script = ExtResource("3_gbg46")
+data = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+name = &"material_index"
+category = ""
+data_type = 1
+stride = 1
+
+[sub_resource type="Resource" id="Resource_cmdm2"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AAAAAAAA")
+name = &"selected"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_81ffy"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0)
+name = &"uv_transform"
+category = ""
+data_type = 8
+stride = 6
+
+[sub_resource type="Resource" id="Resource_xkrlj"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AQEBAQEB")
+name = &"visible"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_cxqu4"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+name = &"color"
+category = ""
+data_type = 4
+stride = 4
+
+[sub_resource type="Resource" id="Resource_je200"]
+script = ExtResource("3_gbg46")
+data = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
+name = &"face_index"
+category = ""
+data_type = 1
+stride = 1
+
+[sub_resource type="Resource" id="Resource_cu2hm"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
+name = &"normal"
+category = ""
+data_type = 6
+stride = 3
+
+[sub_resource type="Resource" id="Resource_7wtsp"]
+script = ExtResource("3_gbg46")
+data = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+name = &"vertex_index"
+category = ""
+data_type = 1
+stride = 1
+
+[sub_resource type="Resource" id="Resource_iydwn"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(0, 5, 0, 0, 5, 2, 0, 0, 2, 0, 0, 0, 3, 5, 0, 3, 5, 2, 3, 0, 2, 3, 0, 0)
+name = &"position"
+category = ""
+data_type = 6
+stride = 3
+
+[sub_resource type="Resource" id="Resource_blhk3"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AAAAAAAAAAA=")
+name = &"selected"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_atqi0"]
+script = ExtResource("5_m6tvv")
+num_vertices = 8
+num_edges = 12
+num_faces = 6
+num_face_vertices = 24
+active_vertex = -1
+active_edge = -1
+active_face = -1
+active_face_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+vertex_data = {
+"position": SubResource("Resource_iydwn"),
+"selected": SubResource("Resource_blhk3")
+}
+edge_data = {
+"selected": SubResource("Resource_50lpj")
+}
+face_data = {
+"color": SubResource("Resource_kftfb"),
+"material_index": SubResource("Resource_ttpll"),
+"selected": SubResource("Resource_cmdm2"),
+"uv_transform": SubResource("Resource_81ffy"),
+"visible": SubResource("Resource_xkrlj")
+}
+face_vertex_data = {
+"color": SubResource("Resource_cxqu4"),
+"face_index": SubResource("Resource_je200"),
+"normal": SubResource("Resource_cu2hm"),
+"vertex_index": SubResource("Resource_7wtsp")
+}
+
+[sub_resource type="Resource" id="Resource_txtwi"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AAAAAAAAAAAAAAAA")
+name = &"selected"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_pyaf0"]
+script = ExtResource("3_gbg46")
+data = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+name = &"material_index"
+category = ""
+data_type = 1
+stride = 1
+
+[sub_resource type="Resource" id="Resource_bucjc"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AQEBAQEB")
+name = &"visible"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_vqasi"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+name = &"color"
+category = ""
+data_type = 4
+stride = 4
+
+[sub_resource type="Resource" id="Resource_ethqn"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0)
+name = &"uv_transform"
+category = ""
+data_type = 8
+stride = 6
+
+[sub_resource type="Resource" id="Resource_ol4e4"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AAAAAAAA")
+name = &"selected"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_8bng3"]
+script = ExtResource("3_gbg46")
+data = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
+name = &"face_index"
+category = ""
+data_type = 1
+stride = 1
+
+[sub_resource type="Resource" id="Resource_4klvf"]
+script = ExtResource("3_gbg46")
+data = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+name = &"vertex_index"
+category = ""
+data_type = 1
+stride = 1
+
+[sub_resource type="Resource" id="Resource_cy4w8"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+name = &"color"
+category = ""
+data_type = 4
+stride = 4
+
+[sub_resource type="Resource" id="Resource_o5b0e"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
+name = &"normal"
+category = ""
+data_type = 6
+stride = 3
+
+[sub_resource type="Resource" id="Resource_ekc8a"]
+script = ExtResource("4_mba3b")
+data = PackedFloat32Array(0, 2, 0, 0, 2, 2, 0, 0, 2, 0, 0, 0, 6, 2, 0, 6, 2, 2, 6, 0, 2, 6, 0, 0)
+name = &"position"
+category = ""
+data_type = 6
+stride = 3
+
+[sub_resource type="Resource" id="Resource_tnrco"]
+script = ExtResource("2_mhlta")
+data = PackedByteArray("AAAAAAAAAAA=")
+name = &"selected"
+category = ""
+data_type = 0
+stride = 1
+
+[sub_resource type="Resource" id="Resource_sxfbf"]
+script = ExtResource("5_m6tvv")
+num_vertices = 8
+num_edges = 12
+num_faces = 6
+num_face_vertices = 24
+active_vertex = -1
+active_edge = -1
+active_face = -1
+active_face_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+vertex_data = {
+"position": SubResource("Resource_ekc8a"),
+"selected": SubResource("Resource_tnrco")
+}
+edge_data = {
+"selected": SubResource("Resource_txtwi")
+}
+face_data = {
+"color": SubResource("Resource_vqasi"),
+"material_index": SubResource("Resource_pyaf0"),
+"selected": SubResource("Resource_ol4e4"),
+"uv_transform": SubResource("Resource_ethqn"),
+"visible": SubResource("Resource_bucjc")
+}
+face_vertex_data = {
+"color": SubResource("Resource_cy4w8"),
+"face_index": SubResource("Resource_8bng3"),
+"normal": SubResource("Resource_o5b0e"),
+"vertex_index": SubResource("Resource_4klvf")
+}
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_qvwfa"]
 size = Vector3(2.42529, 3.53052, 3.65961)
 
@@ -13548,7 +13810,7 @@ script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_rwsge")
 
 [node name="floor" type="Node3D" parent="cyclops/Tree house"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.134027, 0, 0.105904)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.134027, 0, 1.1059)
 script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_3trpr")
 
@@ -14061,16 +14323,191 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75107, 5.64393, -3.20979)
 script = ExtResource("1_an0hd")
 mesh_vector_data = SubResource("Resource_ulqla")
 
-[node name="stairs4" type="Node3D" parent="cyclops/all stairs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0100932, -3.20885, 1.23075)
+[node name="Block_32" type="Node3D" parent="cyclops/all stairs/stairs2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.12393, 2.65495, -5.22665)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_hfvkl")
 
 [node name="stairs3" type="Node3D" parent="cyclops/all stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0100932, -2.35579, 1.15933)
 
 [node name="Block_0" type="Node3D" parent="cyclops/all stairs/stairs3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.12393, 3.50537, -5.20979)
+transform = Transform3D(0.67, 0, 0, 0, 1, 0, 0, 0, 3, -4.14, 3.51, -5.19)
 script = ExtResource("1_an0hd")
-mesh_vector_data = SubResource("Resource_hfvkl")
+mesh_vector_data = SubResource("Resource_atqi0")
+
+[node name="Block_1" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.806995)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_hd02r")
+
+[node name="Block_2" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.681995)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_rmmoe")
+
+[node name="Block_3" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.556995)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_8j6yy")
+
+[node name="Block_4" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.431995)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_q078n")
+
+[node name="Block_5" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.306995)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_0ti2h")
+
+[node name="Block_6" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.181995)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_fi776")
+
+[node name="Block_7" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, 0.0569947)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_7j0ff")
+
+[node name="Block_8" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.0680053)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_a4gv1")
+
+[node name="Block_9" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.193005)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_js82g")
+
+[node name="Block_10" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.318002)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_8mfe5")
+
+[node name="Block_11" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.443002)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_yttf1")
+
+[node name="Block_12" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.568002)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_4680s")
+
+[node name="Block_13" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.693002)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_y405r")
+
+[node name="Block_14" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.818002)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_klcbt")
+
+[node name="Block_15" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -0.943002)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_k072d")
+
+[node name="Block_16" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.068)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_2xt23")
+
+[node name="Block_17" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.193)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_ewgsb")
+
+[node name="Block_18" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.318)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_kgi7b")
+
+[node name="Block_19" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.443)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_t5don")
+
+[node name="Block_20" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.568)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_giitf")
+
+[node name="Block_21" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.693)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_daye8")
+
+[node name="Block_22" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.818)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_sdlt3")
+
+[node name="Block_23" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -1.943)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_ncxui")
+
+[node name="Block_24" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.068)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_mjuh8")
+
+[node name="Block_25" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.193)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_t1bdc")
+
+[node name="Block_26" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.31801)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_46lhi")
+
+[node name="Block_27" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.44301)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_2wl60")
+
+[node name="Block_28" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.56801)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_8aol6")
+
+[node name="Block_29" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.69301)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_bm33x")
+
+[node name="Block_30" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.81801)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_arihk")
+
+[node name="Block_31" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -2.94301)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_yqcw6")
+
+[node name="Block_32" type="Node3D" parent="cyclops/all stairs/stairs3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.13765, 8.43328, -3.06801)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_ulqla")
+
+[node name="stairs4" type="Node3D" parent="cyclops/all stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0100932, -3.20885, 1.23075)
+
+[node name="Block_0" type="Node3D" parent="cyclops/all stairs/stairs4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12393, 9.20885, 0.663346)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_sxfbf")
+
+[node name="Block_1" type="Node3D" parent="cyclops/all stairs/stairs4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12393, 9.20885, 0.663346)
+script = ExtResource("1_an0hd")
+mesh_vector_data = SubResource("Resource_sxfbf")
 
 [node name="Character" parent="." instance=ExtResource("6_7888r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.803969, 28, -0.716898)
@@ -14337,9 +14774,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00985718, 1.63708, -0.34164
 shape = SubResource("BoxShape3D_qwxxe")
 
 [node name="mage" parent="puzzles" instance=ExtResource("16_vdg2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69368, 0, 3.91792)
 
 [node name="barb" parent="puzzles" instance=ExtResource("17_6icbu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20742, 0.20221, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20742, 0.20221, 9.78703)
 
 [node name="knight" parent="puzzles" instance=ExtResource("18_r4uo7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.71018, 0.20221, 5.63031)
