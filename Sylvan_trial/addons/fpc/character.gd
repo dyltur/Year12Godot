@@ -61,6 +61,8 @@ var puzzles_solved = 0
 @onready var ray = $Head/Camera/RayCast3D	
 @onready var interaction_notifier = $Control/interactionnotifier
 @onready var collection_tracker = $Control/MarginContainer/collectiontracker
+@export var chess_move = false
+
 
 # Member variables
 var speed : float = base_speed
@@ -352,11 +354,47 @@ func _unhandled_input(event):
 
 func check_ray_hit():
 	if ray.is_colliding():
-		if ray.get_collider().is_in_group("Pickup"):
+		if ray.get_collider().is_in_group("wp"):
+			chess_move = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("white pawn"):
+			chess_move = false
+			var move_chess = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("wh"):
+			chess_move = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("white horse"):
+			chess_move = false
+			var move_chess = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("bp"):
+			chess_move = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("black pawn"):
+			chess_move = false
+			var move_chess = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("bb"):
+			chess_move = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("black bishop"):
+			chess_move = false
+			var move_chess = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("bh"):
+			chess_move = true
+			interaction_notifier.visible = true
+		if ray.get_collider().is_in_group("black horse"):
+			chess_move = false
+			var move_chess = true
 			interaction_notifier.visible = true
 		if Input.is_action_just_pressed("use"):
 			ray.get_collider().queue_free()
 			puzzles_solved +=1
 			collection_tracker.text = "pages : " + str(puzzles_solved) + "/10"
+			
+	
 	else:
 		interaction_notifier.visible = false
+		
