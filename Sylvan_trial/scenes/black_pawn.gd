@@ -1,8 +1,11 @@
 extends MeshInstance3D
 
 
-#if var chess_move = true 
-
+func black_pawn_move():
+	if chess_move == true:
+		pass
+	else:
+		pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
